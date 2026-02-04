@@ -1,10 +1,9 @@
-
 import CardOne from "./components/CardOne";
 import Heading from "./components/heading";
 import CardTwo from "./components/CardTwo";
 import CardThree from "./components/CardThree";
 import CardFour from "./components/CardFour";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
         <article className="card-section">
           <CardOne />
         </article>
-        
+
         <article className="card-section">
           <CardTwo />
           <CardThree />
@@ -30,6 +29,5 @@ function App() {
     </main>
   );
 }
-
 
 export default App;
