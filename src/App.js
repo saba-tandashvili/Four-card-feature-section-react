@@ -1,47 +1,35 @@
-import "./App.css"
-import equi from "./images/image-equilibrium.jpg"
-import eth from "./images/icon-ethereum.svg"
-import clock from "./images/icon-clock.svg"
-import avatar from "./images/image-avatar.png"
-import view from "./images/icon-view.svg"
+
+import CardOne from "./components/CardOne";
+import Heading from "./components/heading";
+import CardTwo from "./components/CardTwo";
+import CardThree from "./components/CardThree";
+import CardFour from "./components/CardFour";
+import './App.css';
 
 function App() {
-	return (
-		<div className="Card">
-			<div className="banner">
-				<img src={equi} alt="" className="equi" />
-				<div>
-					<img src={view} alt="" className="view" />
-				</div>
-			</div>
-			<p className="title" >
-				Equilibrium #3429
-			</p>
-			<p className="description">
-				Our Equilibrium collection promotes balance and calm.
-			</p>
-			<div className="group-4">
-				<div className="left">
-					<img src={eth} alt="" height="18px" />
-					<p className="caption">0.041 ETH</p>
-				</div>
-				<div className="right">
-					<img src={clock} alt="" height="16px" />
-					<p className="time-left">3 days left</p>
-				</div>
-			</div>
-			<div className="line"></div>
-			<div className="author">
-				<img src={avatar} alt="" className="avatar" />
-				<span>
-					Creation of{" "}
-					<p className="author-link" >
-						Jules Wyvern
-					</p>
-				</span>
-			</div>
-		</div>
-	)
+  return (
+    <main className="App">
+      <section className="heading-section">
+        <Heading />
+      </section>
+
+      <section className="card-container">
+        <article className="card-section">
+          <CardOne />
+        </article>
+        
+        <article className="card-section">
+          <CardTwo />
+          <CardThree />
+        </article>
+
+        <article className="card-section">
+          <CardFour />
+        </article>
+      </section>
+    </main>
+  );
 }
 
-export default App
+
+export default App;
